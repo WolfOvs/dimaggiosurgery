@@ -1,0 +1,28 @@
+{
+  "hosting": {
+    "public": "deploy",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      },
+      {
+        "source": "curriculum",
+        "destination": "/curriculum.html"
+      },
+      {
+        "source": "blog",
+        "destination": "/blog.html"
+      },
+      {
+        "source": "first-article",
+        "destination": "/first-article.html"
+      }
+    ]
+  }
+}
