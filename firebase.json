@@ -12,15 +12,15 @@
         "destination": "/index.html"
       },
       {
-        "source": "curriculum",
+        "source": "/curriculum",
         "destination": "/curriculum.html"
       },
       {
-        "source": "blog",
+        "source": "/blog",
         "destination": "/blog.html"
       },
       {
-        "source": "first-article",
+        "source": "/first-article",
         "destination": "/first-article.html"
       }
     ]
