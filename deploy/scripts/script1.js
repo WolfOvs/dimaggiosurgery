@@ -86,7 +86,7 @@ function setLanguagePreference(lang) {
 
 // Function to fetch language data
 async function fetchLanguageData(lang) {
-  const response = await fetch(`languages/${lang}.json`);
+  const response = await fetch(`/languages/${lang}.json`);
   if(lang === 'it') {
     document.getElementsByClassName("en-switch")[0].style.display = "none";
     document.getElementsByClassName("it-switch")[0].style.display = "block";
