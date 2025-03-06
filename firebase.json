@@ -33,11 +33,11 @@
       },
       {
         "source": "/en/chronic-heartburn",
-        "destination": "/first-article.html"
+        "destination": "/chronic-heartburn.html"
       },
       {
         "source": "/it/chronic-heartburn",
-        "destination": "/first-article.html"
+        "destination": "/chronic-heartburn.html"
       }
     ]
   }
