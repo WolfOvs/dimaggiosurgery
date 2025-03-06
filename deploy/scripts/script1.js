@@ -118,33 +118,30 @@ async function changeLanguage(lang) {
 
   const langData = await fetchLanguageData(lang);
   updateContent(langData);
-  toggleArabicStylesheet(lang); // Toggle Arabic stylesheet
+  toggleArabicStylesheet(lang);
+
+  // Update query string with language preference
+  const url = new URL(window.location);
+  const pathParts = url.pathname.split('/');
+  pathParts[1] = lang === 'en' ? 'en' : 'it';
+  url.pathname = pathParts.join('/');
+  window.history.replaceState({}, '', url);
 }
-
-// Function to change tabs
-// function changeTab(tab) {
-//   if(tab === 'first') {
-//     document.getElementsByClassName("firstTab")[0].style.display = "block";
-//     document.getElementsByClassName("secondTab")[0].style.display = "none";
-//     document.getElementsByClassName("thirdTab")[0].style.display = "none";
-//   } 
-//   if(tab === 'second') {
-//     document.getElementsByClassName("firstTab")[0].style.display = "none";
-//     document.getElementsByClassName("secondTab")[0].style.display = "block";
-//     document.getElementsByClassName("thirdTab")[0].style.display = "none";
-//   } 
-//   if(tab === 'third') {
-//     document.getElementsByClassName("firstTab")[0].style.display = "none";
-//     document.getElementsByClassName("secondTab")[0].style.display = "none";
-//     document.getElementsByClassName("thirdTab")[0].style.display = "block";
-//   } 
-// }
-
 
 window.addEventListener('DOMContentLoaded', async () => {
   const userPreferredLanguage = localStorage.getItem('language') || 'en';
   const langData = await fetchLanguageData(userPreferredLanguage);
   updateContent(langData);
+
+  // Update query string with language preference
+  const url = new URL(window.location);
+  const pathParts = url.pathname.split('/');
+  console.log('path', pathParts);
+  pathParts[1] = userPreferredLanguage === 'en' ? 'en' : 'it';
+  console.log('path1', pathParts);
+  url.pathname = pathParts.join('/');
+  console.log('URL', url)
+  window.history.replaceState({}, '', url);
 });
 
 

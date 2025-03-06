@@ -8,19 +8,35 @@
     ],
     "rewrites": [
       {
-        "source": "/",
+        "source": "/en",
         "destination": "/index.html"
       },
       {
-        "source": "/curriculum",
+        "source": "/it",
+        "destination": "/index.html"
+      },
+      {
+        "source": "/en/curriculum",
         "destination": "/curriculum.html"
       },
       {
-        "source": "/blog",
+        "source": "/it/curriculum",
+        "destination": "/curriculum.html"
+      },
+      {
+        "source": "/en/blog",
         "destination": "/blog.html"
       },
       {
-        "source": "/first-article",
+        "source": "/it/blog",
+        "destination": "/blog.html"
+      },
+      {
+        "source": "/en/chronic-heartburn",
+        "destination": "/first-article.html"
+      },
+      {
+        "source": "/it/chronic-heartburn",
         "destination": "/first-article.html"
       }
     ]
