@@ -900,7 +900,7 @@ footer a {
 
     .banner picture img{
         width: auto;
-        height: auto;
+        height: 100%;
     }
 
     header .contacts {
