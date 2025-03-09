@@ -828,6 +828,11 @@ footer a {
 }
 
 @media (max-width:767px) {
+    .body {
+        width: 90%;
+        padding: 0px;
+    }
+    
     .mobile-menu {
         display: block;
     }
