@@ -1,72 +1,11 @@
 
-
-
-
-// var map2 = L.map('map2').setView([51.51758067913786, -0.05947181640764378], 13);
-
-// L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
-//     maxZoom: 19,
-//     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-// }).addTo(map2);
-
-// var marker2 = L.marker([51.51758067913786, -0.05947181640764378]).addTo(map2);
-
-// marker2.bindPopup("<b>The Royal London Hospital");
-
-// setTimeout(function () { map2.invalidateSize() }, 3000);
-
-// animare query
-
 var logo = document.getElementsByClassName("logo");
-
-var psw = localStorage.getItem("psw");
-
-if(psw === "Forzamilan") {
-  if (psw == "Forzamilan") {
-    document.getElementsByTagName("main")[0].style.display = "block";
-    document.getElementsByTagName("header")[0].style.display = "block";
-    document.getElementsByTagName("footer")[0].style.display = "block";
-    if(document.getElementsByClassName("form")[0]) {
-      document.getElementsByClassName("form")[0].style.display = "none";
-    }
-
-    setTimeout(function () {
-      window.dispatchEvent(new Event("resize"));
-   }, 500);
-}
-}
 
 if(logo[0] && /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
     logo[0].classList.remove("animate__fadeInLeft");
     logo[0].classList.add("animate__bounceIn");
   }
 
-
-  var psw = document.getElementById("psw");
-  var submit = document.getElementById("submit");
-  
-  if(submit) {
-    submit.addEventListener("click", function() {
-      var pswValue = psw.value;
-      if (pswValue === "Forzamilan") {
-          displayDate(pswValue);
-          localStorage.setItem("psw", pswValue);
-      }
-  });
-  }
-   
-   function displayDate(psw) {
-       if (psw == "Forzamilan") {
-           document.getElementsByTagName("main")[0].style.display = "block";
-           document.getElementsByTagName("header")[0].style.display = "block";
-           document.getElementsByTagName("footer")[0].style.display = "block";
-           document.getElementsByClassName("form")[0].style.display = "none";
-
-           setTimeout(function () {
-             window.dispatchEvent(new Event("resize"));
-          }, 500);
-       }
-   }
 
 // Function to update content based on selected language
 function updateContent(langData) {
