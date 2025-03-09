@@ -31,7 +31,6 @@ if(psw === "Forzamilan") {
     }
 
     setTimeout(function () {
-      console.log("resize")
       window.dispatchEvent(new Event("resize"));
    }, 500);
 }
@@ -64,7 +63,6 @@ if(logo[0] && /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.t
            document.getElementsByClassName("form")[0].style.display = "none";
 
            setTimeout(function () {
-             console.log("resize")
              window.dispatchEvent(new Event("resize"));
           }, 500);
        }
@@ -103,7 +101,6 @@ async function fetchLanguageData(lang) {
 
     var videoIT = document.getElementsByClassName("it-video")[0];
     var videoEN = document.getElementsByClassName("en-video")[0];
-    console.log(videoIT, videoEN)
     if (videoIT || videoEN) {
       videoIT.style.display = "none";
       videoEN.style.display = "block";
@@ -137,11 +134,8 @@ window.addEventListener('DOMContentLoaded', async () => {
   // Update query string with language preference
   const url = new URL(window.location);
   const pathParts = url.pathname.split('/');
-  console.log('path', pathParts);
   pathParts[1] = userPreferredLanguage === 'en' ? 'en' : 'it';
-  console.log('path1', pathParts);
   url.pathname = pathParts.join('/');
-  console.log('URL', url)
   window.history.replaceState({}, '', url);
 });
 
