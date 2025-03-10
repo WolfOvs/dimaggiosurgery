@@ -81,10 +81,10 @@ window.addEventListener('DOMContentLoaded', async () => {
   url.pathname = pathParts.join('/');
   console.log('url2', url);
   console.log('url3', `${url}${pathParts[1]}`);
-  if(pathParts[1] === 'it' || pathParts[1] === 'en') {
-  window.history.replaceState({}, '', `${url}${pathPage}`);
-  } else {
+  if(pathPage !== 'it' || pathPage !== 'en') {
     window.history.replaceState({}, '', url);
+  } else {
+    window.history.replaceState({}, '', `${url}${pathPage}`);
   }
 });
 
