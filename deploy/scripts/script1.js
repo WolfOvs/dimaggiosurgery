@@ -74,6 +74,7 @@ window.addEventListener('DOMContentLoaded', async () => {
   // Update query string with language preference
   const url = new URL(window.location);
   console.log('url', url.pathname);
+  const pathPage = url.pathname;
   const pathParts = url.pathname.split('/');
   console.log('pathParts', pathParts);
   pathParts[1] = userPreferredLanguage === 'en' ? 'en' : 'it';
@@ -81,7 +82,7 @@ window.addEventListener('DOMContentLoaded', async () => {
   console.log('url2', url);
   console.log('url3', `${url}${pathParts[1]}`);
   if(pathParts[1] === 'it' && url.pathname === 'en') {
-  window.history.replaceState({}, '', `${url}${pathParts[1]}`);
+  window.history.replaceState({}, '', `${url}${pathPage}`);
   } else {
     window.history.replaceState({}, '', url);
   }
