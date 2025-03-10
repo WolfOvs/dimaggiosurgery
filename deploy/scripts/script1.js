@@ -80,8 +80,8 @@ window.addEventListener('DOMContentLoaded', async () => {
 
   pathParts[1] = userPreferredLanguage === 'en' ? 'en' : 'it';
   url.pathname = pathParts.join('/');
-  
-  if(pathPage.includes(pages) || pathPage.includes(pages)) {
+
+  if(pages.includes(pathPage)) {
     window.history.replaceState({}, '', `${url}${pathPage}`);
   } else {
     window.history.replaceState({}, '', url);
