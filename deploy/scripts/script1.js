@@ -24,6 +24,12 @@ function setLanguagePreference(lang) {
 // Function to fetch language data
 async function fetchLanguageData(lang) {
   const response = await fetch(`https://dimaggiosurgery.web.app/languages/${lang}.json`);
+  let langData;
+  if (lang === 'en') {
+    langData = await import('/languages/en.json');
+  } else if (lang === 'it') {
+    langData = await import('/languages/it.json');
+  }
   if(lang === 'it') {
     document.getElementsByClassName("en-switch")[0].style.display = "none";
     document.getElementsByClassName("it-switch")[0].style.display = "block";
