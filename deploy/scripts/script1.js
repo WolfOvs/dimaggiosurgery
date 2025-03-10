@@ -79,7 +79,7 @@ window.addEventListener('DOMContentLoaded', async () => {
   pathParts[1] = userPreferredLanguage === 'en' ? 'en' : 'it';
   url.pathname = pathParts.join('/');
   console.log('url2', url);
-  window.history.replaceState({}, '', url);
+  window.history.replaceState({}, '', `${url}${pathParts[1]}`);
 });
 
 
