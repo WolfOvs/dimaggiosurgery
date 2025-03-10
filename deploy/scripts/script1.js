@@ -71,17 +71,17 @@ window.addEventListener('DOMContentLoaded', async () => {
   const langData = await fetchLanguageData(userPreferredLanguage);
   updateContent(langData);
 
+  const pages = ['curriculum', 'blog', 'chronic-heartburn'];
+
   // Update query string with language preference
   const url = new URL(window.location);
-  console.log('url', url.pathname);
   const pathPage = url.pathname;
   const pathParts = url.pathname.split('/');
-  console.log('pathParts', pathParts);
+
   pathParts[1] = userPreferredLanguage === 'en' ? 'en' : 'it';
   url.pathname = pathParts.join('/');
-  console.log('url2', url);
-  console.log('url3', `${url}${pathParts[1]}`);
-  if(pathPage !== 'it' || pathPage !== 'en') {
+  
+  if(pathPage.includes(pages) || pathPage.includes(pages)) {
     window.history.replaceState({}, '', `${url}${pathPage}`);
   } else {
     window.history.replaceState({}, '', url);
