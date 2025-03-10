@@ -80,7 +80,11 @@ window.addEventListener('DOMContentLoaded', async () => {
   url.pathname = pathParts.join('/');
   console.log('url2', url);
   console.log('url3', `${url}${pathParts[1]}`);
+  if(pathParts[1] === 'it' && url.pathname === 'en') {
   window.history.replaceState({}, '', `${url}${pathParts[1]}`);
+  } else {
+    window.history.replaceState({}, '', url);
+  }
 });
 
 
