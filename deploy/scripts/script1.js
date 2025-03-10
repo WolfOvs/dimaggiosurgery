@@ -82,9 +82,9 @@ window.addEventListener('DOMContentLoaded', async () => {
   console.log('url2', url);
   console.log('url3', `${url}${pathParts[1]}`);
   if(pathPage !== 'it' || pathPage !== 'en') {
-    window.history.replaceState({}, '', url);
-  } else {
     window.history.replaceState({}, '', `${url}${pathPage}`);
+  } else {
+    window.history.replaceState({}, '', url);
   }
 });
 
