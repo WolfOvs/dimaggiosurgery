@@ -75,7 +75,7 @@ window.addEventListener('DOMContentLoaded', async () => {
 
   // Update query string with language preference
   const url = new URL(window.location);
-  const pathPage = url.pathname;
+  const pathPage = url.pathname.replace('/', '');
   const pathParts = url.pathname.split('/');
 
   pathParts[1] = userPreferredLanguage === 'en' ? 'en' : 'it';
