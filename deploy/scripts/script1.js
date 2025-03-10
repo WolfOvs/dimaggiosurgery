@@ -67,14 +67,15 @@ async function changeLanguage(lang) {
 }
 
 window.addEventListener('DOMContentLoaded', async () => {
-  console.log('DOMContentLoaded');
   const userPreferredLanguage = localStorage.getItem('language') || 'en';
   const langData = await fetchLanguageData(userPreferredLanguage);
   updateContent(langData);
 
   // Update query string with language preference
   const url = new URL(window.location);
+  console.log('url', url.pathname);
   const pathParts = url.pathname.split('/');
+  console.log('pathParts', pathParts);
   pathParts[1] = userPreferredLanguage === 'en' ? 'en' : 'it';
   url.pathname = pathParts.join('/');
   window.history.replaceState({}, '', url);
