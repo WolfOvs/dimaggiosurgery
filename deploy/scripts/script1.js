@@ -23,7 +23,7 @@ function setLanguagePreference(lang) {
 
 // Function to fetch language data
 async function fetchLanguageData(lang) {
-  const response = await fetch(`https://dimaggiosurgery.web.app/languages/${lang}.json`);
+  //const response = await fetch(`https://dimaggiosurgery.web.app/languages/${lang}.json`);
   let langData;
   if (lang === 'en') {
     langData = await import('/languages/en.json');
