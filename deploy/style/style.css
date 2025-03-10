@@ -1,9 +1,3 @@
-body header,
-body main,
-body footer {
-    display: none;
-}
-
 html {
     background-color: #F6F9FA;
 }
@@ -112,8 +106,19 @@ video {
 .section-block .block{
     width:50px;
     height: 50px;
-    background-color: #e3cc36;
+    background-color: #005b96;
     margin-top: 30px;
+}
+
+.banner picture:after {
+    content: '';
+    display: block;
+    /* background-color: #000; */
+    height: 100%;
+    width: 100%;
+    position:absolute;
+    top: 0px;
+    opacity: .2;
 }
 
 .paper-bg {
@@ -129,8 +134,8 @@ video {
 }
 
 .doctify_carousel_container svg {
-    stroke: #084723;
-    fill: #084723;
+    stroke: #005b96;
+    fill: #005b96;
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -150,7 +155,9 @@ section {
 
 .styleText {
     font-family: "EB Garamond", serif;
-    color:#084723;
+    color:#005b96;
+    display: inline-block;
+    position: relative;
 }
 
 .ml-40 {
@@ -169,7 +176,7 @@ section {
 }
 
 .line-text:after {
-    background-color: #e3cc36;
+    background-color: #b3cde0;
     position: absolute;
     content: '';
     width: 120%;
@@ -241,7 +248,7 @@ header .line {
     height: 1px;
     position: absolute;
     width: 100%;
-    background-color: #e3cc36;
+    background-color: #b3cde0;
     top:68px;
     left:0px;
     z-index: 9;
@@ -322,7 +329,8 @@ main {
 
 @media (max-width: 1090px) {
     .body {
-        width: 100%;
+        width: 90%;
+        padding: 0px;
     }
     .yellow-square:after {
         display: none !important;
@@ -364,7 +372,7 @@ header img {
 }
 
 .banner {
-    height: 540px;
+    height: 670px;
     overflow: hidden;
     position: relative;
     margin-top: -120px;
@@ -372,7 +380,7 @@ header img {
 
 .banner picture img{
     width: 100%;
-    height: 100%;
+    height: auto;
 }
 
 .banner-text {
@@ -388,9 +396,8 @@ header img {
     font-size: 50px;
     font-weight: bold;
     margin-top: 146px;
-    color: #BFE7FF;
+    color: #fff;
     width: 100%;
-    padding: 20px;
     text-shadow: 2px 1px black;
 }
 
@@ -409,7 +416,7 @@ header img {
 }
 
 .banner-text .image-container:before {
-    border: 7px solid #e3cc36;
+    border: 7px solid #b3cde0;
     position: absolute;
     content: '';
     width: 144px;
@@ -422,12 +429,12 @@ header img {
 .banner-title h2 {
     font-size: 35px;
     font-weight: bold;
-    padding: 10px 0 0 20px;
+    padding: 10px 0 0 0px;
     text-align:center;
     line-height: 32px;
     width: 100%;
-    color: #BFE7FF;
-    text-shadow: 2px 1px black;
+    color: #fff;
+    text-shadow: 2px 2px black;
 }
 
 .contacts-map {
@@ -436,6 +443,8 @@ header img {
 
 .image-container {
     position: relative;
+    width: 50%;
+    margin-right: 20px;
 }
 
 .doctify_carousel_container {
@@ -449,6 +458,12 @@ header img {
     position: absolute;
     left: 140px;
     top: 20px;
+}
+
+.cv-text img {
+    width: 280px;
+    float: left;
+    padding: 0 20px 20px 0;
 }
 
 .light-blue-square {
@@ -490,14 +505,18 @@ header img {
     z-index:99;
 }
 
+.card.first.firstTab p {
+    margin-bottom:10px;
+}
+
 .firstTab img {
     width: 200px;
     float: left;
-    padding: 0 20px 30px 0;
+    padding: 0 20px 20px 0;
 }
 
-.description-text .card {
-    padding: 0 30px;
+.cv-text p {
+   margin-bottom: 10px;
 }
 
 .map-link {
@@ -537,7 +556,6 @@ header img {
 
 .section-fee-insurance {
     padding-top:30px;
-    display: flex;
     margin-top:20px;
     margin-bottom:100px;
 }
@@ -547,9 +565,14 @@ header img {
     width:33.33%;
 }
 
-.section-fee-insurance img {
+.section-fee-insurance li img {
     max-width: 30px;
     margin-right: 10px;
+}
+
+.section-fee-insurance img {
+    width: 420px;
+    margin-right: 40px;
 }
 
 .section-fee-insurance li {
@@ -568,6 +591,7 @@ header img {
 
 .logos-insurances li {
     display: flex;
+    padding: 10px 30px 0px 0;
 }
 
 
@@ -608,7 +632,7 @@ header img {
 }
 
 .menu li {
-    margin: 0px 15px;
+    margin: 0px 13px;
 }
 
 .menu li a {
@@ -636,8 +660,8 @@ header img {
     position: absolute;
     top: 0px;
     left: 0px;
-    background-color: #084723;
-    color:#e3cc36;
+    background-color: #005b96;
+    color:#fff;
     padding: 10px;
     display: none;
 }
@@ -683,7 +707,7 @@ header img {
 .yellow-square:after {
     content: '';
     display: block;
-    background-color: #e3cc36;
+    background-color: #b3cde0;
     height: 165px;
     width: 30px;
     left: -20px;
@@ -694,7 +718,7 @@ header img {
 .yellow-square2:after {
     content: '';
     display: block;
-    background-color: #e3cc36;
+    background-color: #b3cde0;
     height: 245px;
     width: 30px;
     right: -20px;
@@ -705,7 +729,7 @@ header img {
 .yellow-cube:after {
     content: '';
     display: block;
-    background-color: #e3cc36;
+    background-color: #005b96;
     height: 50px;
     width: 50px;
     left: -20px;
@@ -716,17 +740,17 @@ header img {
 
 footer {
     margin: 20px 0 0 0;
-    background-color: #084723;
-    border-top:5px solid #e3cc36;
+    background-color: #005b96;
+    border-top:5px solid #b3cde0;
 }
 
 footer .contacts {
     padding: 30px 30px 200px 10px;
-    color: #e3cc36;
+    color: #fff;
 }
 
 footer a {
-    color: #e3cc36;
+    color: #b3cde0;
 }
 
 .contacts h4 {
@@ -734,6 +758,7 @@ footer a {
     padding-bottom: 20px;
     display: inline-block;
     font-weight: 300;
+    color: #fff;
 }
 
 .loader-block {
@@ -786,13 +811,28 @@ footer a {
     display: flex;
 }
 
+.cv-text img.second-img {
+    float: right;
+    padding: 40px 0px 0px 20px;
+}
+
+.cv-text img.eng-img {
+    float: left;
+    padding: 0px 20px 70px 0px;
+}
+
 @media (max-width:1290px) {
     .banner {
-        height: 540px;
+        height: 670px;
     }
 }
 
-@media (max-width:1023px) {
+@media (max-width:767px) {
+    .body {
+        width: 90%;
+        padding: 0px;
+    }
+    
     .mobile-menu {
         display: block;
     }
@@ -802,15 +842,38 @@ footer a {
     }
 }
 
-@media (max-width:1023px) {
+@media (max-width:767px) {
     .it-video, .it-video {
         width: 100% !important;
     }
 }
 
-@media (max-width:641px) {
+@media (max-width:767px) {
 
+    .cv-text img {
+        float: none;
+        width:100%;
+        padding: 10px 0px !important;
+    }
 
+    .wrapper-blog .text-article img{
+        width: 100%;
+        padding: 20px 0;
+    }
+
+    main .blog {
+        padding: 10px;
+    }
+
+    .description-text .card p {
+        padding: 0px 10px;
+    }
+
+    .banner-links {
+        right: 0;
+        top: 430px;
+        left: 30%;
+    }
 
     .line-text:after {
         display:none;
@@ -825,7 +888,7 @@ footer a {
     }
 
     .banner-text .image-container:before {
-        border: 7px solid #e3cc36;
+        border: 7px solid #b3cde0;
         position: absolute;
         content: '';
         width: 99px;
@@ -837,7 +900,7 @@ footer a {
 
     .banner picture img{
         width: auto;
-        height: auto;
+        height: 100%;
     }
 
     header .contacts {
@@ -863,7 +926,12 @@ footer a {
     }
 
     .body {
-        width: 100%;
+        width: 95vw;
+    }
+
+    .language-linkedin-container {
+        margin-top: 7px;
+        margin-right: 10px;
     }
 
     body {
@@ -887,14 +955,18 @@ footer a {
         padding-right:5px;
     }
 
+    .card.third.thirdTab .flex {
+        display: block;
+    }
+
     .tab-container .tab h3 {
         line-height:20px;
         line-height: 20px;
-        padding: 22px 10px;
+        padding: 22px 0px;
     }
 
     .banner {
-        height: 100% !important;
+        height: 100vh !important;
     }
 
     .banner-text {
@@ -903,9 +975,9 @@ footer a {
     }
 
     .banner-text h1 {
-        text-shadow: 2px 1px black;
+        text-shadow: 3px 2px black;
         font-size: 18px;
-        margin-top: 20px;
+        margin-top: 50px;
         font-size: 40px;
     }
 
@@ -929,6 +1001,19 @@ footer a {
         padding-bottom:100px !important;
     }
 
+    .card.first.firstTab iframe {
+        width: 100%;
+    }
+
+    .section-fee-insurance img {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .container-line.tab h3 {
+        padding-left: 5px;
+    }
+
     .banner-title {
         display: block;
         width: 100%;
@@ -948,9 +1033,17 @@ footer a {
         text-shadow: 2px 1px black;
     }
 
+    .top-doctors-iframe iframe {
+        height: 750px !important;
+    }
+
+    .section-fee-insurance .flex {
+        display: block;
+    }
+
     .contacts-map .card {
         display: block;
-        height: 700px;
+        height: auto;
     }
 
     .contacts-map .card .map {
@@ -979,15 +1072,18 @@ footer a {
         height:290px;
     }
 
-    .blog.article {
-        padding:20px;
-    }
     .wrapper-blog {
         overflow: hidden;
     }
 
     .wrapper-blog p{
-        font-size:20px;
+        font-size:16px;
+    }
+
+    .cv-text img.second-img {
+        float: none;
+        padding: 20px 0px 0px 0px;
+        width: 100%;
     }
 
 
@@ -1046,7 +1142,7 @@ footer a {
 {
   display: block;
   /* You can also use relative/absolute here if you want to stay on the top */
-  position: fixed;
+  position: absolute;
   top: 25px;
   left: 25px;
   z-index: 1;
@@ -1058,7 +1154,6 @@ footer a {
 {
   text-decoration: none;
   color: #232323;
-  
   transition: color 0.3s ease;
 }
 
@@ -1095,7 +1190,7 @@ footer a {
   height: 4px;
   margin-bottom: 5px;
   position: relative;
-  background: #cdcdcd;
+  background: #fff;
   border-radius: 3px;
   z-index: 1;
   transform-origin: 4px 0px;
@@ -1149,9 +1244,9 @@ footer a {
 #menu
 {
   position: absolute;
-  width: 101vw;
+  width: 100vw;
   max-height: 100vh;
-  margin: -100px 0 0 -50px;
+  margin: -100px 0 0 -25px;
   padding: 50px;
   padding-top: 125px;
   box-sizing: border-box;
