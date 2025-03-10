@@ -82,7 +82,7 @@ window.addEventListener('DOMContentLoaded', async () => {
   url.pathname = pathParts.join('/');
 
   if(pages.includes(pathPage)) {
-    window.history.replaceState({}, '', `${url}${pathPage}`);
+    window.history.replaceState({}, '', `${url}/${pathPage}`);
   } else {
     window.history.replaceState({}, '', url);
   }
