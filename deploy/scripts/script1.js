@@ -9,3 +9,10 @@ function scrollToContacts(){document.getElementById('contacts').scrollIntoView({
 function scrollToClinical(){document.getElementById('clinical').scrollIntoView({behavior:'smooth'})}
 function scrollToProfessional(){document.getElementById('professional').scrollIntoView({behavior:'smooth'})}
 function scrollToLocations(){document.getElementById('locations').scrollIntoView({behavior:'smooth'})}
+
+if (/iPad|iPhone|iPod/.test(navigator.userAgent)) {
+    var iframe = document.querySelector('.topDoctorsIframe');
+    if (iframe) {
+        iframe.style.display = 'none';
+    }
+}
