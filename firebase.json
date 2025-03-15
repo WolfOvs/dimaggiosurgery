@@ -15,6 +15,15 @@
             "value": "*"
           }
         ]
+      },
+      {
+        "source": "https://topdoctors.co.uk/ws/show_widget/f8d2e80c1458ea2501f98a2cafadb397/10/266",
+        "headers": [
+          {
+            "key": "Access-Control-Allow-Origin",
+            "value": "*"
+          }
+        ]
       }
     ],
     "rewrites": [
