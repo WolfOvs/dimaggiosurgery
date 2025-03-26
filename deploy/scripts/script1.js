@@ -10,9 +10,13 @@ function scrollToClinical(){document.getElementById('clinical').scrollIntoView({
 function scrollToProfessional(){document.getElementById('professional').scrollIntoView({behavior:'smooth'})}
 function scrollToLocations(){document.getElementById('locations').scrollIntoView({behavior:'smooth'})}
 
-if (/iPad|iPhone|iPod/.test(navigator.userAgent)) {
-    var iframe = document.querySelector('.topDoctorsIframe');
-    if (iframe) {
-        iframe.style.display = 'none';
-    }
-}
+fetch('https://ipapi.co/country/')
+    .then(response => response.text())
+    .then(country => {
+      console.log('country', country)
+      if (country !== 'GB') {  // Se non sei nel Regno Unito
+        document.getElementById('topDoctorsIframe').style.display = 'none';
+        document.getElementById('iframe-message').innerHTML = 
+          'Il contenuto non è disponibile nella tua regione. <a href="https://topdoctors.co.uk/">Clicca qui</a> per accedere direttamente.';
+      }
+    });
