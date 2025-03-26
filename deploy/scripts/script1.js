@@ -16,7 +16,6 @@ fetch('https://ipapi.co/country/')
       console.log('country', country)
       if (country !== 'GB') {  // Se non sei nel Regno Unito
         document.getElementById('topDoctorsIframe').style.display = 'none';
-        document.getElementById('iframe-message').innerHTML = 
-          'Il contenuto non è disponibile nella tua regione. <a href="https://topdoctors.co.uk/">Clicca qui</a> per accedere direttamente.';
+        
       }
     });
