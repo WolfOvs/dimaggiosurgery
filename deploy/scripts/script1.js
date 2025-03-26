@@ -14,8 +14,16 @@ fetch('https://ipapi.co/country/')
     .then(response => response.text())
     .then(country => {
       console.log('country', country)
-      if (country !== 'GB') {  // Se non sei nel Regno Unito
+      if (country !== 'GB' &&
+          country !== 'IT' &&
+          country !== 'US' &&
+          country !== 'CA' &&
+          country !== 'AU' &&
+          country !== 'FR' &&
+          country !== 'DE' &&
+          country !== 'NL' &&
+          country !== 'ES' 
+      ) { 
         document.getElementById('topDoctorsIframe').style.display = 'none';
-        
       }
     });
