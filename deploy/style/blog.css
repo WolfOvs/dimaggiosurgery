@@ -8,6 +8,10 @@
     padding-bottom:20px;
 }
 
+.blog.article.body ul li {
+    font-weight: 300;
+}
+
 .blog-title {
     font-size: 20px;
     font-weight:600;
