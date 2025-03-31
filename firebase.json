@@ -65,6 +65,18 @@
       {
         "source": "/it/chronic-heartburn",
         "destination": "/chronic-heartburn.html"
+      },
+      {
+        "source": "/laparoscopic-anti-reflux",
+        "destination": "/laparoscopic-anti-reflux.html"
+      },
+      {
+        "source": "/en/laparoscopic-anti-reflux",
+        "destination": "/laparoscopic-anti-reflux.html"
+      },
+      {
+        "source": "/it/laparoscopic-anti-reflux",
+        "destination": "/laparoscopic-anti-reflux.html"
       }
     ]
   }
