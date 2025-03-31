@@ -10,20 +10,20 @@ function scrollToClinical(){document.getElementById('clinical').scrollIntoView({
 function scrollToProfessional(){document.getElementById('professional').scrollIntoView({behavior:'smooth'})}
 function scrollToLocations(){document.getElementById('locations').scrollIntoView({behavior:'smooth'})}
 
-fetch('https://ipapi.co/country/')
-    .then(response => response.text())
-    .then(country => {
-      console.log('country', country)
-      if (country !== 'GB' &&
-          country !== 'IT' &&
-          country !== 'US' &&
-          country !== 'CA' &&
-          country !== 'AU' &&
-          country !== 'FR' &&
-          country !== 'DE' &&
-          country !== 'NL' &&
-          country !== 'ES' 
-      ) { 
-        document.getElementById('topDoctorsIframe').style.display = 'none';
-      }
-    });
+// fetch('https://ipapi.co/country/')
+//     .then(response => response.text())
+//     .then(country => {
+//       console.log('country', country)
+//       if (country !== 'GB' &&
+//           country !== 'IT' &&
+//           country !== 'US' &&
+//           country !== 'CA' &&
+//           country !== 'AU' &&
+//           country !== 'FR' &&
+//           country !== 'DE' &&
+//           country !== 'NL' &&
+//           country !== 'ES' 
+//       ) { 
+//         document.getElementById('topDoctorsIframe').style.display = 'none';
+//       }
+//     });
