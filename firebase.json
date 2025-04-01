@@ -77,6 +77,18 @@
       {
         "source": "/it/laparoscopic-anti-reflux",
         "destination": "/laparoscopic-anti-reflux.html"
+      },
+      {
+        "source": "/eating-smart",
+        "destination": "/eating-smart.html"
+      },
+      {
+        "source": "/en/eating-smart",
+        "destination": "/eating-smart.html"
+      },
+      {
+        "source": "/it/eating-smart",
+        "destination": "/eating-smart.html"
       }
     ]
   }
