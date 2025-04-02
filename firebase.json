@@ -43,15 +43,15 @@
         "destination": "/curriculum.html"
       },
       {
-        "source": "/blog",
+        "source": "/patient-information",
         "destination": "/blog.html"
       },
       {
-        "source": "/en/blog",
+        "source": "/en/patient-information",
         "destination": "/blog.html"
       },
       {
-        "source": "/it/blog",
+        "source": "/it/patient-information",
         "destination": "/blog.html"
       },
       {
