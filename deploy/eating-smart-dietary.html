@@ -10,13 +10,14 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon-16x16.png">
     <link rel="mask-icon" href="/assets/img/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="manifest" href="/manifest.json">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
     <meta name="description" content="Mr. Francesco di Maggio is a renowned surgeon specializing in various treatments. Learn more about his profile, CV, research, and locations.">
-    <link rel="manifest" href="/manifest.json">
     <link rel="stylesheet" href="/style/styles-blue.css">
-    <link rel="stylesheet" href="/style/blog3.css">
+    <link rel="stylesheet" href="/style/article3.css">
     <link rel="stylesheet" href="/style/utils3.css">
+    <link rel="stylesheet" href="/style/blog3.css">
     <link rel="icon" href="/assets/img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
         integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
@@ -29,7 +30,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 
-<body>
+<body class="paper-bg ">
     <header>
         <div class="line shadow"></div>
         <div class="wrapper body">
@@ -89,21 +90,21 @@
         <section class="banner">
 
             <picture>
-                <source data-vw="100" media="(max-width:321px)" srcset="/assets/img/banner04.avif 2x">
+                <source data-vw="100" media="(max-width:321px)" srcset="/assets/img/banner03.avif 2x">
                 <source data-vw="100" media="(min-width:322px) and (max-width:420px)"
-                    srcset="/assets/img/banner04.avif 2x">
+                    srcset="/assets/img/banner03.avif 2x">
                 <source data-vw="100" media="(min-width:421px) and (max-width:639px)"
-                    srcset="/assets/img/banner04.avif 2x">
+                    srcset="/assets/img/banner03.avif 2x">
                 <source data-vw="100" media="(min-width:640px) and (max-width:749px)"
-                    srcset="/assets/img/banner04.avif 2x">
+                    srcset="/assets/img/banner03.avif 2x">
                 <source data-vw="100" media="(min-width:750px) and (max-width:1079px)"
-                    srcset="/assets/img/banner04.avif 2x">
+                    srcset="/assets/img/banner03.avif 2x">
                 <source data-vw="100" media="(min-width:1080px) and (max-width:1369px)"
-                    srcset="/assets/img/banner04.avif 2x">
+                    srcset="/assets/img/banner03.avif 2x">
                 <source data-vw="100" media="(min-width:1370px) and (max-width:1535px)"
-                    srcset="/assets/img/banner04.avif 2x">
-                <source data-vw="100" media="(min-width:1536px)" srcset="/assets/img/banner04.avif 1x">
-                <img fetchpriority="high" role="presentation" src="/assets/img/banner04.avif"
+                    srcset="/assets/img/banner03.avif 2x">
+                <source data-vw="100" media="(min-width:1536px)" srcset="/assets/img/banner03.avif 1x">
+                <img fetchpriority="high" role="presentation" src="/assets/img/banner03.avif"
                     style="--img-width: 1920px; --img-height: 900px; --aspect-ratio: 2.13333333333333;">
             </picture>
             <div class="body">
@@ -148,81 +149,12 @@
                 </div>
             </div>
         </section>
-        <section class="blog body">
+        <section class="blog article body">
             <div class="wrapper-blog">
-                <div class="container-line">
-                    <h2 class="styleText fontBold line-text" data-i18n="title_blog"></h2>
-                </div>
-                <div class="blog-container">
-                    <div class="blog-post">
-                        <div class="image-container">
-                            <img src="/assets/img/article-thumb.png" alt="blog-post1" />
-                            <!-- <img class="profile-thumb" src="./assets/img/img-profile-thumb.png" alt="blog-post1" /> -->
-                        </div>
-                        <div class="text-container">
-                            <h3 class="blog-title" data-i18n="title_blog_post1"></h3>
-                            <p class="date" data-i18n="date_blog_post1"></p>
-                            <p class="blog-text" data-i18n="text_blog_post1"></p>
-                            <a href="./chronic-heartburn">
-                                <p class="blog-text-read-more" data-i18n="readmore"></p>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="blog-post">
-                        <div class="image-container">
-                            <img src="/assets/img/galls.jpg" alt="blog-post1" />
-                        </div>
-                        <div class="text-container">
-                            
-                            <h3 class="blog-title" data-i18n="title_blog_post2"></h3>
-                            
-                            <p class="date" data-i18n="date_blog_post2"></p>
-                            <p class="blog-text" data-i18n="text_blog_post2"></p>
-                            <a href="https://www.youtube.com/watch?v=MRhxWbnOV2Y" target="_blank">
-                                <p class="blog-text-read-more" data-i18n="readmore"></p>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="blog-post">
-                        <div class="image-container">
-                            <img src="/assets/img/laparoscopic.png" alt="laparoscopic thumb" />
-                        </div>
-                        <div class="text-container">
-                            <h3 class="blog-title" data-i18n="title_blog_post3"></h3>
-                            <p class="date" data-i18n="date_blog_post3"></p>
-                            <p class="blog-text" data-i18n="text_blog_post3"></p>
-                            <a href="./laparoscopic-anti-reflux">
-                                <p class="blog-text-read-more" data-i18n="readmore"></p>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="blog-post">
-                        <div class="image-container">
-                            <img src="/assets/img/food.png" alt="eating smart thumb" />
-                        </div>
-                        <div class="text-container">
-                            <h3 class="blog-title" data-i18n="title_blog_post4"></h3>
-                            <p class="date" data-i18n="date_blog_post4"></p>
-                            <p class="blog-text" data-i18n="text_blog_post4"></p>
-                            <a href="./eating-smart">
-                                <p class="blog-text-read-more" data-i18n="readmore"></p>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="blog-post">
-                        <div class="image-container">
-                            <img src="/assets/img/galls.jpg" alt="eating smart thumb" />
-                        </div>
-                        <div class="text-container">
-                            <h3 class="blog-title" data-i18n="title_blog_post5"></h3>
-                            <p class="date" data-i18n="date_blog_post5"></p>
-                            <p class="blog-text" data-i18n="text_blog_post5"></p>
-                            <a href="./eating-smart-dietary">
-                                <p class="blog-text-read-more" data-i18n="readmore"></p>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+                <h2 class="styleText" data-i18n="title_article4"></h2>
+
+                <h3 class="date-article" data-i18n="date_title_article4"></h3>
+                <p data-i18n="title_article_text4" class="text-article"></p>
             </div>
         </section>
     </main>

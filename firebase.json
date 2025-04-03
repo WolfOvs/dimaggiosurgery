@@ -89,6 +89,18 @@
       {
         "source": "/it/eating-smart",
         "destination": "/eating-smart.html"
+      },
+      {
+        "source": "/eating-smart-dietary",
+        "destination": "/eating-smart-dietary.html"
+      },
+      {
+        "source": "/en/eating-smart-dietary",
+        "destination": "/eating-smart-dietary.html"
+      },
+      {
+        "source": "/it/eating-smart-dietary",
+        "destination": "/eating-smart-dietary.html"
       }
     ]
   }
