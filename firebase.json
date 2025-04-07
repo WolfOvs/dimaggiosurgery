@@ -101,6 +101,18 @@
       {
         "source": "/it/eating-smart-dietary",
         "destination": "/eating-smart-dietary.html"
+      },
+      {
+        "source": "/gallstones-symptoms",
+        "destination": "/gallstones-symptoms.html"
+      },
+      {
+        "source": "/en/gallstones-symptoms",
+        "destination": "/gallstones-symptoms.html"
+      },
+      {
+        "source": "/it/gallstones-symptoms",
+        "destination": "/gallstones-symptoms.html"
       }
     ]
   }
