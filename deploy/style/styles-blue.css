@@ -2,3 +2,7 @@ html{background-color:#F6F9FA}.form{padding:50px;display:flex;justify-content:ce
 .blog .underline {
   text-decoration: underline;
 }
+
+.blog strong {
+    font-weight: 700;
+  }
