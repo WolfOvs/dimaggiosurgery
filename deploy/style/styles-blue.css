@@ -6,3 +6,7 @@ html{background-color:#F6F9FA}.form{padding:50px;display:flex;justify-content:ce
 .blog strong {
     font-weight: 700;
   }
+
+  .blog.article.body {
+    background-color: #fff;
+  }
