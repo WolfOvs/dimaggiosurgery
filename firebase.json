@@ -113,6 +113,18 @@
       {
         "source": "/it/gallstones-symptoms",
         "destination": "/gallstones-symptoms.html"
+      },
+      {
+        "source": "/magnetic-innovation",
+        "destination": "/magnetic-innovation.html"
+      },
+      {
+        "source": "/en/magnetic-innovation",
+        "destination": "/magnetic-innovation.html"
+      },
+      {
+        "source": "/it/magnetic-innovation",
+        "destination": "/magnetic-innovation.html"
       }
     ]
   }
