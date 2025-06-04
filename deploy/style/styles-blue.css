@@ -27,10 +27,7 @@ html{background-color:#F6F9FA}.form{padding:50px;display:flex;justify-content:ce
 
   @media (max-width: 767px) {
     .hide-button {
-      width: 170px;
-      height: 50px;
-      top: 19px;
-      right: -25px;
+      display:none;
     }
 
   }
