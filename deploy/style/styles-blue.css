@@ -11,6 +11,16 @@ html{background-color:#F6F9FA}.form{padding:50px;display:flex;justify-content:ce
     background-color: #fff;
   }
 
-  .button.is-info.is-fullwidth.is-relative {
-    display: none !important;
+  .top-doctors-iframe {
+    position:relative;
+  }
+
+  .hide-button {
+    width: 300px;
+    height: 50px;
+    position:absolute;
+    top: 0;
+    right: 0;
+    background-color: #fff;
+    z-index: 99999;
   }
