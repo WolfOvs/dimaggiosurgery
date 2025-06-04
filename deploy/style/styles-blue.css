@@ -10,3 +10,7 @@ html{background-color:#F6F9FA}.form{padding:50px;display:flex;justify-content:ce
   .paper-bg {
     background-color: #fff;
   }
+
+  .button.is-info.is-fullwidth.is-relative {
+    display: none !important;
+  }
