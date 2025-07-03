@@ -125,6 +125,18 @@
       {
         "source": "/it/magnetic-innovation",
         "destination": "/magnetic-innovation.html"
+      },
+      {
+        "source": "/inguinal-hernias",
+        "destination": "/inguinal-hernias.html"
+      },
+      {
+        "source": "/en/inguinal-hernias",
+        "destination": "/inguinal-hernias.html"
+      },
+      {
+        "source": "/it/inguinal-hernias",
+        "destination": "/inguinal-hernias.html"
       }
     ]
   }
