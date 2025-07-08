@@ -5,13 +5,16 @@
 }
 
 .link-icon {
-    display:flex;
+    display:inline-flex;
     align-items: flex-start;
+    padding-bottom: 60px;
 }
 
 .download-icon {
-    width: 40px;
-    display: inline-block;
+    width: 30px;
+    display: inline-block !important;
     height: 40px;
-    padding: 0px;
+    padding: 0px !important;
+    margin-left: 10px !important;
+    margin-top: -5px !important;
 }
