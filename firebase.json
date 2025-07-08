@@ -137,6 +137,18 @@
       {
         "source": "/it/inguinal-hernias",
         "destination": "/inguinal-hernias.html"
+      },
+      {
+        "source": "/hernia-repair",
+        "destination": "/hernia-repair.html"
+      },
+      {
+        "source": "/en/hernia-repair",
+        "destination": "/hernia-repair.html"
+      },
+      {
+        "source": "/it/hernia-repair",
+        "destination": "/hernia-repair.html"
       }
     ]
   }
