@@ -153,71 +153,62 @@
                 <div class="container-line">
                     <h2 class="styleText fontBold line-text" data-i18n="title_blog"></h2>
                 </div>
-                <div class="blog-container">
-                    <!-- <div class="blog-post">
-                        <div class="image-container">
-                            <img src="/assets/img/decision.jpg" alt="Your guide to understanding inguinal hernias" />
-                        </div>
-                        <div class="text-container">
-                            <h3 class="blog-title" data-i18n="title_blog_post10"></h3>
-                            <p class="date" data-i18n="date_blog_post10"></p>
-                            <p class="blog-text" data-i18n="text_blog_post10"></p>
-                            <a href="/assets/files/making-a-decision-about-inguinal-hernia.pdf" target="_blank">
-                                <p class="blog-text-read-more" data-i18n="download"></p>
-                            </a>
-                        </div>
-                    </div> -->
-                    <!-- <div class="blog-post">
-                        <div class="image-container">
-                            <img src="/assets/img/food.png" alt="Your guide to understanding inguinal hernias" />
-                        </div>
-                        <div class="text-container">
-                            <h3 class="blog-title" data-i18n="title_blog_post9"></h3>
-                            <p class="date" data-i18n="date_blog_post9"></p>
-                            <p class="blog-text" data-i18n="text_blog_post9"></p>
-                            <a href="./hernia-repair-diet">
-                                <p class="blog-text-read-more" data-i18n="readmore"></p>
-                            </a>
-                        </div>
-                    </div> -->
+                <div class="blog-tabs">
+                    <button class="tab-button active" onclick="openTab(event, 'gallstones')" data-i18n="tab_gallstones">Gallstones</button>
+                    <button class="tab-button" onclick="openTab(event, 'nissen')" data-i18n="tab_nissen">Nissen</button>
+                    <button class="tab-button" onclick="openTab(event, 'inguinal-hernias')" data-i18n="tab_inguinal_hernias">Inguinal Hernias</button>
+                </div>
+                <div id="gallstones" class="blog-container tab-content active">
                     <div class="blog-post">
                         <div class="image-container">
-                            <img src="/assets/img/hernia2.png" alt="Your guide to understanding inguinal hernias" />
+                            <img src="/assets/img/galls.jpg" alt="blog-post1" />
                         </div>
                         <div class="text-container">
-                            <h3 class="blog-title" data-i18n="title_blog_post8"></h3>
-                            <p class="date" data-i18n="date_blog_post8"></p>
-                            <p class="blog-text" data-i18n="text_blog_post8"></p>
-                            <a href="./inguinal-hernias">
+                            <h3 class="blog-title" data-i18n="title_blog_post2"></h3>
+                            <p class="date" data-i18n="date_blog_post2"></p>
+                            <p class="blog-text" data-i18n="text_blog_post2"></p>
+                            <a href="https://www.youtube.com/watch?v=MRhxWbnOV2Y" target="_blank">
                                 <p class="blog-text-read-more" data-i18n="readmore"></p>
                             </a>
                         </div>
                     </div>
                     <div class="blog-post">
                         <div class="image-container">
+                            <img src="/assets/img/galls.jpg" alt="eating smart thumb" />
+                        </div>
+                        <div class="text-container">
+                            <h3 class="blog-title" data-i18n="title_blog_post5"></h3>
+                            <p class="date" data-i18n="date_blog_post5"></p>
+                            <p class="blog-text" data-i18n="text_blog_post5"></p>
+                            <a href="./eating-smart-dietary">
+                                <p class="blog-text-read-more" data-i18n="readmore"></p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="blog-post">
+                        <div class="image-container">
+                            <img src="/assets/img/gallblog.png" alt="Gallstones: Symptoms, Complications, and Treatment" />
+                        </div>
+                        <div class="text-container">
+                            <h3 class="blog-title" data-i18n="title_blog_post6"></h3>
+                            <p class="date" data-i18n="date_blog_post6"></p>
+                            <p class="blog-text" data-i18n="text_blog_post6"></p>
+                            <a href="./gallstones-symptoms">
+                                <p class="blog-text-read-more" data-i18n="readmore"></p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div id="nissen" class="blog-container tab-content">
+                    <div class="blog-post">
+                        <div class="image-container">
                             <img src="/assets/img/article-thumb.png" alt="blog-post1" />
-                            <!-- <img class="profile-thumb" src="./assets/img/img-profile-thumb.png" alt="blog-post1" /> -->
                         </div>
                         <div class="text-container">
                             <h3 class="blog-title" data-i18n="title_blog_post1"></h3>
                             <p class="date" data-i18n="date_blog_post1"></p>
                             <p class="blog-text" data-i18n="text_blog_post1"></p>
                             <a href="./chronic-heartburn">
-                                <p class="blog-text-read-more" data-i18n="readmore"></p>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="blog-post">
-                        <div class="image-container">
-                            <img src="/assets/img/galls.jpg" alt="blog-post1" />
-                        </div>
-                        <div class="text-container">
-                            
-                            <h3 class="blog-title" data-i18n="title_blog_post2"></h3>
-                            
-                            <p class="date" data-i18n="date_blog_post2"></p>
-                            <p class="blog-text" data-i18n="text_blog_post2"></p>
-                            <a href="https://www.youtube.com/watch?v=MRhxWbnOV2Y" target="_blank">
                                 <p class="blog-text-read-more" data-i18n="readmore"></p>
                             </a>
                         </div>
@@ -250,39 +241,28 @@
                     </div>
                     <div class="blog-post">
                         <div class="image-container">
-                            <img src="/assets/img/galls.jpg" alt="eating smart thumb" />
-                        </div>
-                        <div class="text-container">
-                            <h3 class="blog-title" data-i18n="title_blog_post5"></h3>
-                            <p class="date" data-i18n="date_blog_post5"></p>
-                            <p class="blog-text" data-i18n="text_blog_post5"></p>
-                            <a href="./eating-smart-dietary">
-                                <p class="blog-text-read-more" data-i18n="readmore"></p>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="blog-post">
-                        <div class="image-container">
-                            <img src="/assets/img/gallblog.png" alt="Gallstones: Symptoms, Complications, and Treatment" />
-                        </div>
-                        <div class="text-container">
-                            <h3 class="blog-title" data-i18n="title_blog_post6"></h3>
-                            <p class="date" data-i18n="date_blog_post6"></p>
-                            <p class="blog-text" data-i18n="text_blog_post6"></p>
-                            <a href="./gallstones-symptoms">
-                                <p class="blog-text-read-more" data-i18n="readmore"></p>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="blog-post">
-                        <div class="image-container">
-                            <img src="/assets/img/magnetic3.png" alt="Gallstones: Symptoms, Complications, and Treatment" />
+                            <img src="/assets/img/magnetic3.png" alt="Magnetic Innovation" />
                         </div>
                         <div class="text-container">
                             <h3 class="blog-title" data-i18n="title_blog_post7"></h3>
                             <p class="date" data-i18n="date_blog_post7"></p>
                             <p class="blog-text" data-i18n="text_blog_post7"></p>
                             <a href="./magnetic-innovation">
+                                <p class="blog-text-read-more" data-i18n="readmore"></p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div id="inguinal-hernias" class="blog-container tab-content">
+                    <div class="blog-post">
+                        <div class="image-container">
+                            <img src="/assets/img/hernia2.png" alt="Your guide to understanding inguinal hernias" />
+                        </div>
+                        <div class="text-container">
+                            <h3 class="blog-title" data-i18n="title_blog_post8"></h3>
+                            <p class="date" data-i18n="date_blog_post8"></p>
+                            <p class="blog-text" data-i18n="text_blog_post8"></p>
+                            <a href="./inguinal-hernias">
                                 <p class="blog-text-read-more" data-i18n="readmore"></p>
                             </a>
                         </div>
@@ -329,6 +309,28 @@
         // Initialize Firebase
         const app = initializeApp(firebaseConfig);
         const analytics = getAnalytics(app);
+      </script>
+      
+      <script>
+        function openTab(evt, tabName) {
+          var i, tabcontent, tabbuttons;
+          
+          // Hide all tab content
+          tabcontent = document.getElementsByClassName("tab-content");
+          for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].classList.remove("active");
+          }
+          
+          // Remove active class from all tab buttons
+          tabbuttons = document.getElementsByClassName("tab-button");
+          for (i = 0; i < tabbuttons.length; i++) {
+            tabbuttons[i].classList.remove("active");
+          }
+          
+          // Show the selected tab content and mark the button as active
+          document.getElementById(tabName).classList.add("active");
+          evt.currentTarget.classList.add("active");
+        }
       </script>
 </body>
 
