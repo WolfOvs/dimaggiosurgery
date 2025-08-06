@@ -55,3 +55,7 @@
 .tab-content.active {
     display: block;
 }
+
+.wrapper-blog {
+    min-height: 650px;
+}
