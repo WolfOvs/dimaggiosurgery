@@ -149,6 +149,18 @@
       {
         "source": "/it/hernia-repair-diet",
         "destination": "/hernia-repair.html"
+      },
+      {
+        "source": "/adrian-collins-recovery",
+        "destination": "/adrian-collins-recovery.html"
+      },
+      {
+        "source": "/en/adrian-collins-recovery",
+        "destination": "/adrian-collins-recovery.html"
+      },
+      {
+        "source": "/it/adrian-collins-recovery",
+        "destination": "/adrian-collins-recovery.html"
       }
     ]
   }
