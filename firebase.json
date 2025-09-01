@@ -161,6 +161,18 @@
       {
         "source": "/it/adrian-collins-recovery",
         "destination": "/adrian-collins-recovery.html"
+      },
+      {
+        "source": "/stress-and-reflux",
+        "destination": "/stress-and-reflux.html"
+      },
+      {
+        "source": "/en/stress-and-reflux",
+        "destination": "/stress-and-reflux.html"
+      },
+      {
+        "source": "/it/stress-and-reflux",
+        "destination": "/stress-and-reflux.html"
       }
     ]
   }
