@@ -173,6 +173,18 @@
       {
         "source": "/it/stress-and-reflux",
         "destination": "/stress-and-reflux.html"
+      },
+      {
+        "source": "/heartburn",
+        "destination": "/heartburn.html"
+      },
+      {
+        "source": "/en/heartburn",
+        "destination": "/heartburn.html"
+      },
+      {
+        "source": "/it/heartburn",
+        "destination": "/heartburn.html"
       }
     ]
   }
